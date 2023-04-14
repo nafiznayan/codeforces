@@ -1,0 +1,22 @@
+#include<stdio.h>
+#include<string.h>
+int main()
+{
+    int n,l;
+    scanf("%d",&n);
+    char st[100];
+    for(int i=1;i<=n;i++)
+    {
+        scanf("%s",st);
+        l=strlen(st);
+        if(l<=10)
+        puts(st);
+        else {
+            
+            printf("%c%d%c\n",st[0],l-2,st[l-1]);
+        
+        }
+
+    }   
+    return 0;
+}
